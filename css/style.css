@@ -15,7 +15,7 @@
 
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;  /* can change this later */
+    --clr-accent: #aad2e9;  /* can change this later 16e0bd */
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -316,6 +316,7 @@ header {
 
 .service {
     max-width: 500px;
+    min-width: 300px;
     margin: 0, auto;
 }
 
@@ -340,6 +341,10 @@ header {
 
 .about-me__img {
     box-shadow: var(--bs);
+}
+
+.about-me__link {
+    text-decoration: none;
 }
 
 @media (min-width: 600px) {
@@ -382,18 +387,38 @@ header {
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+@media(min-width: 600px) {
+    .portfolio {
+        margin-left: 3em;
+        margin-right: 3em;
+    }
 }
 
 .portfolio__item {
-    background: var(--clr-accent);
+    text-decoration: none;
     overflow: hidden;
+    margin: 1.25em;
+}
+
+.portfolio__name {
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--clr-light);
+    display: block;
+    background: var(--clr-accent);
+    margin: 0 auto;
+    padding: 0.75em;
 }
 
 .portfolio__img {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
+    margin: 0 auto;
 }
 
 .portfolio__item:focus {
@@ -401,11 +426,12 @@ header {
     z-index: 2;
 }
 
-.portfolio__img:hover,
+/* Option to transform the portfolio image */
+/* .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
     opacity: .5;
-}
+} */
 
 /* Footer */
 
