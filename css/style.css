@@ -388,14 +388,14 @@ header {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin-left: 6em;
-    margin-right: 6em;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 @media(min-width: 600px) {
     .portfolio {
-        margin-left: 3em;
-        margin-right: 3em;
+        margin-left: 5em;
+        margin-right: 5em;
     }
 }
 
@@ -408,7 +408,7 @@ header {
 .portfolio__name {
     font-family: var(--ff-primary);
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--clr-light);
     display: block;
     background: var(--clr-accent);
