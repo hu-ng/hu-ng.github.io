@@ -479,6 +479,12 @@ header {
 
 .social-list__link {
     padding: .5em;
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-reg);
+}
+
+.social-list__link:hover {
+    text-decoration: underline;
 }
 
 /* Individual projects */
