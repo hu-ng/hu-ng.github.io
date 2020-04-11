@@ -486,6 +486,18 @@ header {
     text-decoration: underline;
 }
 
+.fa-custom-li:before {
+    content: "\f0e1";
+}
+
+.fa-custom-gh:before {
+    content: "\f09b";
+}
+
+.fa-custom-ig:before {
+    content: "\f16d";
+}
+
 /* Individual projects */
 
 .portfolio-item-individual {
