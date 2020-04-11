@@ -486,6 +486,8 @@ header {
     text-decoration: underline;
 }
 
+/* Custom icons because Adblock Plus removes the default tags */
+
 .fa-custom-li:before {
     content: "\f0e1";
 }
