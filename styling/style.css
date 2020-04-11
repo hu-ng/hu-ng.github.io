@@ -463,7 +463,7 @@ header {
     text-decoration: underline;
 }
 
-.social-list {
+.social-media-list {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -479,6 +479,11 @@ header {
 
 .social-list__link {
     padding: .5em;
+    font-weight: var(--fw-reg);
+}
+
+.social-list__link:hover {
+    text-decoration: underline;
 }
 
 /* Individual projects */
